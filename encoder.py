@@ -6,3 +6,9 @@ def encode(password):
 
 
 
+def decode(password):
+    decoded_pass = ''
+    for digit in password:
+        decoded_pass += str((int(digit) - 3))
+    return decoded_pass
+
